@@ -10,11 +10,10 @@ const TableUsers = (props) => {
 
     const getAllUser = async () => {
         let res = await fectAllUser();
-        if (res && res.data && res.data.data) {
+        if (res && res.data) {
             setListUsers(res.data.data);
         }
     };
-    console.log(listUsers);
     return (
         <>
             <Table striped bordered hover>
