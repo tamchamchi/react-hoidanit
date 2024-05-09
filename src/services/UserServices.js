@@ -1,7 +1,7 @@
 import axios from "./CustomizeAxios";
 
-const fectAllUser = () => {
-     return axios.get('/api/users?page=1')
+const fectAllUser = (page) => {
+     return axios.get(`/api/users?page=${page}`)
 }
 
 export { fectAllUser } 
